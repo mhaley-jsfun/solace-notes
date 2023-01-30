@@ -9,3 +9,9 @@ This is a simple notes app built with Next.js.
 - MongoDB
 - Mongoose
 - TypeScript
+
+## Installation
+```
+  yarn
+  yarn dev
+```
