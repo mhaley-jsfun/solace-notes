@@ -18,7 +18,7 @@ export default function TagInput({ value: tags = [], onChange }: TagInputProps) 
         {tag}
       </div>
     ));
-  }, [tags]);
+  }, [tags, onChange]);
 
   return (
     <div className="flex flex-row">

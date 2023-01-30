@@ -18,7 +18,7 @@ export default function SearchBar() {
 
       router.push({ pathname: router.pathname, query: { ...router.query, q } });
     },
-    [q]
+    [q, router]
   );
 
   return (
