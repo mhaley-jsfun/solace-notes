@@ -28,8 +28,6 @@ export default function SearchBar() {
         onChange={(e) => setQ(e.target.value)}
         className="rounded-full text-md outline-none py-2 pl-6 w-1/4"
       />
-
-      <button type="submit" hidden />
     </form>
   );
 }

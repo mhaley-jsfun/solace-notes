@@ -12,5 +12,5 @@ export default function NoteList() {
     return notes?.map((item) => <NoteItem item={item} key={item.id as string} />);
   }, [notes]);
 
-  return <div>{noteList}</div>;
+  return noteList;
 }
