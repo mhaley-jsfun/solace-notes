@@ -3,7 +3,7 @@ import type { INote } from "@/types";
 import dayjs from "dayjs";
 import calendar from "dayjs/plugin/calendar";
 import classNames from "classnames";
-import { confirmAlert } from "react-confirm-alert"; // Import
+import { confirmAlert } from "react-confirm-alert";
 import "react-confirm-alert/src/react-confirm-alert.css";
 
 import Link from "next/link";
