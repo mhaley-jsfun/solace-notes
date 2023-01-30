@@ -9,8 +9,10 @@ export default function NoteList() {
   const { data: notes } = useNotes(router.query.q as string);
 
   const noteList = useMemo(() => {
-    return notes?.map((item) => <NoteItem item={item} key={item.id as string} />);
+    return notes?.map((item) => (
+      <NoteItem item={item} key={item.id as string} />
+    ));
   }, [notes]);
 
-  return noteList;
+  return <>{noteList}</>;
 }
