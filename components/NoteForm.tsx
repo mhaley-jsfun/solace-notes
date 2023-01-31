@@ -38,7 +38,7 @@ export default function NoteForm({ initialValues, onSubmit }: FormProps) {
           />
 
           {isValid && isDirty && (
-            <button type="submit" className="px-2 py-1 bg-purple-900 rounded-lg text-white">
+            <button type="submit" className="px-4 py-2 bg-purple-900 rounded-lg text-white">
               Save
             </button>
           )}

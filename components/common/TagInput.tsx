@@ -11,7 +11,7 @@ export default function TagInput({ value: tags = [], onChange }: TagInputProps) 
   const tagList = useMemo(() => {
     return tags.map((tag, index) => (
       <div
-        className="p-1 bg-purple-600 mx-1 rounded-sm text-white text-xs"
+        className="p-2 bg-purple-600 mr-2 rounded-md text-white text-xs"
         onClick={() => onChange(tags.filter((_, idx) => idx !== index))}
         key={index}
       >
@@ -21,13 +21,13 @@ export default function TagInput({ value: tags = [], onChange }: TagInputProps) 
   }, [tags, onChange]);
 
   return (
-    <div className="flex flex-row">
+    <div className="flex flex-row gap-1">
       <div className="flex flex-row">{tagList}</div>
 
       <input
         className="outline-none"
         value={tag}
-        placeholder="Enter tag here"
+        placeholder="Enter tags here"
         onChange={(e) => {
           setTag(e.target.value);
         }}
